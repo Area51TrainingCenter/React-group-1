@@ -265,4 +265,15 @@ class GeolocationContainer extends React.Component {
 ```
 
 ## Links
+
+### Javascript
+- [This](https://medium.com/entendiendo-javascript/entendiendo-this-javascript-cba60c8cec8c)
+- [Spread operator](https://davidwalsh.name/spread-operator)
+
+### React
+- [Documentación oficial](https://reactjs.org/docs/hello-world.html)
+- [Tutorial básico](https://frontendlabs.io/3158--react-js-espanol-tutorial-basico-primeros-pasos-ejemplos)
+- [Reconciliation process](https://medium.com/@gethylgeorge/how-virtual-dom-and-diffing-works-in-react-6fc805f9f84e)
+- [https://github.com/ajwhite/render-if](https://github.com/ajwhite/render-if)
+- [https://www.npmjs.com/package/jsx-control-statements](https://www.npmjs.com/package/jsx-control-statements) 
 - [http://jamesknelson.com/react-cheatsheet.pdf](http://jamesknelson.com/react-cheatsheet.pdf)
