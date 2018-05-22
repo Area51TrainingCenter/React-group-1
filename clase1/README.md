@@ -269,6 +269,7 @@ class GeolocationContainer extends React.Component {
 ### Javascript
 - [This](https://medium.com/entendiendo-javascript/entendiendo-this-javascript-cba60c8cec8c)
 - [Spread operator](https://davidwalsh.name/spread-operator)
+- [Constructor](https://stackoverflow.com/a/40440322)
 
 ### React
 - [Documentación oficial](https://reactjs.org/docs/hello-world.html)
