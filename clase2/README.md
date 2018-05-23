@@ -119,4 +119,10 @@ class MyComponent extends Component {
 
 
 ## Links
+- (Component definition and Creating an element)[https://twitter.com/tylermcginnis/status/771087982858113024]
+- (Components, Elements and instances)[https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html]
+- (3 maneras de crear componentes)[https://medium.com/@the.benhawy/3-ways-to-create-react-components-8b3620e4ea0]
+- (create react app)[https://github.com/facebook/create-react-app]
+- (Node Package Manager - NPM)[https://www.sitepoint.com/beginners-guide-node-package-manager/]
+- (NPX)[https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b]
 - (React Interview Questions)[https://tylermcginnis.com/react-interview-questions/]
