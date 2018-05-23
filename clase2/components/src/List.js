@@ -18,14 +18,16 @@ export default class List extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   const users = 'https://jsonplaceholder.typicode.com/users'
-  //   fetch(users).then(response => response.json()).then(data => {
-  //     console.log(data);
-  //   }).catch(error => {
-  //     console.log(error);
-  //   });
-  // }
+  componentDidMount() {
+    const users = 'https://jsonplaceholder.typicode.com/users'
+    fetch(users).then(response => response.json()).then(data => {
+      this.setState({
+        users: data,
+      })
+    }).catch(error => {
+      console.log(error);
+    });
+  }
 
   _handleUpdateAdmin() {
     this.setState({
@@ -46,7 +48,7 @@ export default class List extends Component {
     return (
       <div>
         <ul>
-          {this.state.users.map((user, i) => <UsersListItem key={i} name={user} />)}
+          {this.state.users.map((user, i) => <UsersListItem key={i} name={user.name} />)}
         </ul>
         <button onClick={() => this._handleUpdateAdmin()}>Update admin</button>
         <button onClick={() => this._handleToggleAdmin()}>Toggle admin</button>

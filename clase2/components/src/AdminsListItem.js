@@ -6,13 +6,13 @@ export default class AdminListItem extends Component {
     console.log(this.props);
   }
 
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   return nextProps.admin.name === 'x' ? false : true
-  // }
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextProps.admin.name === 'x' ? false : true
+  }
 
-  // componentWillUnmount() {
-  //   console.log('bye... :(');
-  // }
+  componentWillUnmount() {
+    console.log('bye... :(');
+  }
 
   render() {
     const { admin } = this.props;
