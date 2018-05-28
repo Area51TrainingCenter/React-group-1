@@ -17,7 +17,9 @@ class App extends Component {
   }
 
   render() {
-    // const withGists = withData('https://api.github.com/users/gaearon/gists')
+    // const withGists = withData(
+    //   props => `https://api.github.com/users/${props.username}/gists`
+    // )
     // const ListWithGists = withGists(List)
     return (
       <div className="container">
@@ -26,6 +28,8 @@ class App extends Component {
             this.state.gists.map(gist => <li key={gist.id}>{gist.description}</li>)
           }
         </ul>
+        {/* <ListWithGists username="gaearon" />
+        <ListWithGists username="jansanchez" /> */}
       </div>
     );
   }

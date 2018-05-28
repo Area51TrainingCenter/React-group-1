@@ -12,3 +12,8 @@ Todo component puede recibir data de su owner en forma de props, y estos props n
 ## Child-Parent communication
 - La manera en la que un hijo puede modificar sus propios props, es usando un handleEvent que el padre le asigna a través de sus props.
 - El punto es crear componentes que desconozcan el data source
+
+## Links
+- [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+- [Data Flow](https://medium.com/@khbrt/react-unidirectional-data-flow-explained-71bc35858226)
+- [HoC - Basic explanation](https://medium.com/@muthuks/react-higher-order-components-hoc-explained-e6feb29913f1)

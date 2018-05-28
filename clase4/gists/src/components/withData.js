@@ -10,9 +10,11 @@ const withData = url => Component => (
     }
 
     componentDidMount() {
-      console.log(url);
+      const API = typeof url === 'function' ? 
+      url(this.props) : 
+      url;
       
-      fetch(url)
+      fetch(API)
         .then(response => response.json())
         .then(data => this.setState({ data }))
     }

@@ -45,6 +45,6 @@ const Button = ({ children }) => (
 (StoryBook)[https://github.com/storybooks/storybook]
 
 ## Links
-(PropTypes)[https://reactjs.org/docs/typechecking-with-proptypes]
-(ES6 helpful features)[https://blog.pragmatists.com/top-10-es6-features-by-example-80ac878794bb]
-(setState)[https://medium.com/@voonminghann/when-to-use-callback-function-of-setstate-in-react-37fff67e5a6c]
+- [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes)
+- [ES6 helpful features](https://blog.pragmatists.com/top-10-es6-features-by-example-80ac878794bb)
+- [setState](https://medium.com/@voonminghann/when-to-use-callback-function-of-setstate-in-react-37fff67e5a6c)
