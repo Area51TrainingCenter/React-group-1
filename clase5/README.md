@@ -4,6 +4,8 @@
 - Su concepto está basado en FP, especificamente hablando de Currying
 - Un HoC acepta como parametro principal un componente, y como segundo parametro algunas opciones que ayudaran a darle cierto comportamiento/funcionalidad extras al componente que ya mencionamos.
 
+# Forms
+## 
 
 
 ## Links

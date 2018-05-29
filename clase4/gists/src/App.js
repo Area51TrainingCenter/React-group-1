@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import withData from './components/withData'
+import List from './components/List'
 
 class App extends Component {
   constructor() {
@@ -17,10 +19,10 @@ class App extends Component {
   }
 
   render() {
-    // const withGists = withData(
-    //   props => `https://api.github.com/users/${props.username}/gists`
-    // )
-    // const ListWithGists = withGists(List)
+    const withGists = withData(
+      props => `https://api.github.com/users/${props.username}/gists`
+    )
+    const ListWithGists = withGists(List)
     return (
       <div className="container">
         <ul>
@@ -28,8 +30,8 @@ class App extends Component {
             this.state.gists.map(gist => <li key={gist.id}>{gist.description}</li>)
           }
         </ul>
-        {/* <ListWithGists username="gaearon" />
-        <ListWithGists username="jansanchez" /> */}
+        <ListWithGists username="gaearon" />
+        <ListWithGists username="jansanchez" />
       </div>
     );
   }

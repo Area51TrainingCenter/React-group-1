@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import SearchBar from './SearchBar'
 import ContactList from './ContactList'
 
-export default class Contacts extends Component {
+class Contacts extends Component {
   state = {
     filterText: ''
   }
@@ -24,3 +24,5 @@ export default class Contacts extends Component {
     )
   }
 }
+
+export default Contacts

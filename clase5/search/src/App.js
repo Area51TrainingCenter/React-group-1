@@ -11,7 +11,12 @@ class App extends Component {
     fetch(usersAPI)
       .then(response => response.json())
       .then(data => {
-        const contacts = data.results.map(result => Object.assign({}, result, {name: `${result.name.first} ${result.name.last}`}))
+        const contacts = data.results.map(
+          user => (
+            Object.assign(
+              {}, 
+              user, 
+              {name: `${user.name.first} ${user.name.last}`})))
         this.setState({ contacts })
       }).catch(e => console.log(e))
   }
