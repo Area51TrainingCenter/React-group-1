@@ -1,26 +1,38 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 class App extends Component {
-  handleClick = (e) => {
-    console.log(e.type);
-    console.log(e.currentTarget);
-    console.log(e.target);
-    e.preventDefault();
+  handleClick = (event) => {
+    console.log(event.currentTarget);
+    console.log(event.target);
+    console.log(event.type);
+    console.log(event instanceof MouseEvent);
+    console.log(event.nativeEvent instanceof MouseEvent);
+    
+    
+    event.preventDefault()
   }
 
-  handleEvent(event) {
+  onHandle = (event) => {
     switch (event.type) {
       case 'click':
-        console.log('clicked')
-        break
+        console.log('you clicked');
+        break;
       case 'dblclick':
-        console.log('double clicked')
-        break
+        console.log('you dblclicked');
+        break;
+      case 'mousedown':
+        console.log('you mousedown');
+        break;
       default:
-        console.log('unhandled', event.type)
+        break;
     }
+  }
+
+  inputFocus = (event) => {
+    event.preventDefault();
+    console.log(this.el);
+    this.el.style.display = 'none';
+    this.bt.innerText = 'Hello'
   }
 
   render() {
@@ -32,8 +44,16 @@ class App extends Component {
           </div>
         </form>
         <button
-          onClick={this.handleEvent}
-          onDoubleClick={this.handleEvent}>click me and see the event</button>
+          onClick={this.onHandle}
+          onDoubleClick={this.onHandle}
+          onMouseDown={this.onHandle}>Click me!</button>
+
+        <form>
+          <input
+            type="text"
+            ref={x => this.el = x}/>
+          <button ref={bt => this.bt = bt} type="text" onClick={this.inputFocus}>Click</button>
+        </form>
       </div>
     );
   }

@@ -1,0 +1,13 @@
+.Input {
+  border: 1px solid #f3f3f3;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.Textarea {
+  composes: Input;
+  display: block;
+  padding: 20px;
+  border-radius: 5px;
+  border-color: #ddd;
+}

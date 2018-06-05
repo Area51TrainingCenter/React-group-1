@@ -56,6 +56,9 @@ class Controlled extends React.Component {
 
 ## Refs
 - No debería ser muy usado debido a que React tiene un paradigma declarative
+- Permite hacer referencia a algún elemento y manipularlo a nuestro antojo
+- Si estamos haciendo referencia a un Componente, nos permite acceder a sus métodos también
+
 ```javascript
 class MyComponent extends Component {
   handleClick = (e) => {
@@ -76,6 +79,47 @@ class MyComponent extends Component {
 }
 ```
 
+```javascript
+class Input extends Component {
+  state = {
+    value: '',
+  }
+
+  reset = () => {
+    this.setState({ value: '' })
+  }
+
+  handleChange = ({ target }) => {
+    this.setState({ value: target.value })
+  }
+
+  render() {
+    return (
+      <input
+        type="text"
+        value={this.state.value}
+        onChange={this.handleChange} /> 
+    )
+  }
+}
+
+class Reset extends Component {
+  handleClick = () => {
+    this.element.reset()
+  }
+
+  render() {
+    return (
+      <form>
+        <Input ref={element => (this.element = element)} />
+        <button onClick={this.handleClick}>Reset</button>
+      </form>
+    ) 
+  }
+}
+
+```
+
 ## Styles Basics
 - [How top structure your css](https://github.com/paulrrdiaz/how-to-structure-your-css)
 - [ITCSS](https://www.arsys.es/blog/programacion/diseno-web/itcss-mejores-practicas-css/)
@@ -85,3 +129,4 @@ class MyComponent extends Component {
 - [Handling Events](https://reactjs.org/docs/handling-events.html)
 - [SyntheticEvent](https://reactjs.org/docs/events.html)
 - [Bubbling and Capturing](https://javascript.info/bubbling-and-capturing)
+- [Refs in React](https://hackernoon.com/refs-in-react-all-you-need-to-know-fb9c9e2aeb81)
