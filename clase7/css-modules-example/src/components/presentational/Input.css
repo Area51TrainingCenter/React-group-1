@@ -3,3 +3,8 @@
   font-size: 16px;
   padding: 10px 20px;
 }
+
+.InputWarning {
+  composes: Input;
+  border: 1px solid red;
+}

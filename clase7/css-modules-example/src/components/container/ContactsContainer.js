@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Input from '../presentational/Input'
 import Textarea from '../presentational/Textarea'
+import Button from '../presentational/Button'
 
 class ContactsContainer extends Component {
   constructor() {
@@ -23,6 +24,9 @@ class ContactsContainer extends Component {
           <Input 
             onChange={this.handleOnChange} 
             value={this.state.value} />
+        </div>
+        <div>
+          <Button name={this.state.value} />
         </div>
         <div>
           <Textarea />

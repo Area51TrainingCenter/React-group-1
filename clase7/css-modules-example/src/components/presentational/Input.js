@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './../presentational/Input.css'
+import styles from './Input.css'
 
 const Input = ({ onChange, value }) => {
   return (
     <input
-      className={styles.Input}
+      className={styles.InputWarning}
       type="text"
       onChange={onChange}
       value={value} />

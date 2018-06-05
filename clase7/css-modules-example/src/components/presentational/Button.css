@@ -1,0 +1,12 @@
+.button {
+  padding: 10px 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.buttonFail {
+  composes: button;
+  background-color: red;
+}

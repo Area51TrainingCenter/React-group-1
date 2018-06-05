@@ -124,6 +124,9 @@ class Reset extends Component {
 - [How top structure your css](https://github.com/paulrrdiaz/how-to-structure-your-css)
 - [ITCSS](https://www.arsys.es/blog/programacion/diseno-web/itcss-mejores-practicas-css/)
 
+## Animations
+- 
+
 ## Links
 - [React JSON schema form](https://github.com/mozilla-services/react-jsonschema-form)
 - [Handling Events](https://reactjs.org/docs/handling-events.html)

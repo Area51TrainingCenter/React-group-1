@@ -3,6 +3,15 @@ import { StyleRoot } from 'radium'
 import ButtonRadium from './components/ButtonRadium'
 
 class App extends Component {
+  state = {
+    fontSize: 10,
+  }
+
+  handleOnChange = (e) => {
+    console.log(e.target.value);
+    this.setState({ fontSize: Number(e.target.value) })
+  }
+
   render() {
     const styles = {
       color: 'red',
@@ -16,6 +25,12 @@ class App extends Component {
         <div className="container">
           <div>
             <button style={styles}>Click me!</button>
+          </div>
+          <div>
+            <input
+              type="text"
+              style={{fontSize: this.state.fontSize}}
+              onChange={this.handleOnChange}/>
           </div>
           <div>
             <ButtonRadium />
