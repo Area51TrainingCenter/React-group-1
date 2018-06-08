@@ -36,9 +36,7 @@ const todos = (state = [], action) => {
   }
 };
 
-const visibilityFilter = (state = 'SHOW_ALL',
-  action
-) => {
+const visibilityFilter = (state = 'SHOW_ALL', action) => {
   switch (action.type) {
     case 'SET_VISIBILITY_FILTER':
       return action.filter;
@@ -101,15 +99,14 @@ const mapStateToLinkProps = (state, ownProps) => {
     active: ownProps.filter === state.visibilityFilter
   };
 };
+
 const mapDispatchToLinkProps = (dispatch, ownProps) => {
   return {
     onClick: () => dispatch(setVisibilityFilter(ownProps.filter))
   };
 }
-const FilterLink = connect(
-  mapStateToLinkProps,
-  mapDispatchToLinkProps
-)(Link);
+
+const FilterLink = connect(mapStateToLinkProps, mapDispatchToLinkProps)(Link);
 
 const Footer = () => (
   <p>
@@ -137,10 +134,7 @@ const Todo = ({onClick, completed, text}) => (
   </li>
 );
 
-const TodoList = ({
-  todos,
-  onTodoClick
-}) => (
+const TodoList = ({todos, onTodoClick}) => (
   <ul>
     {todos.map(todo =>
       <Todo
@@ -194,10 +188,7 @@ const mapDispatchToTodoListProps = (dispatch) => {
   }
 };
 
-const VisibleTodoList = connect(
-  mapStateToTodoListProps,
-  mapDispatchToTodoListProps
-)(TodoList);
+const VisibleTodoList = connect(mapStateToTodoListProps, mapDispatchToTodoListProps)(TodoList);
 
 const TodoApp = () => (
   <div>
