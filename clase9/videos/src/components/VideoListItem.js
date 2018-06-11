@@ -21,8 +21,10 @@ const VideoListItem = ({ video, changeCurrentVideo }) => {
 const Wrapper = styled.li`
   border: 1px solid #222f3e;
   border-radius: 5px;
+  cursor: pointer;
   margin-bottom: 10px;
   padding: 10px;
+  transition: background-color .3s linear 0s;
 
   &:hover {
     background-color: #c8d6e5;

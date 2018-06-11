@@ -6,16 +6,12 @@ import VideoSearch from './../components/VideoSearch'
 import VideoList from './../components/VideoList'
 import VideoDetail from './../components/VideoDetail'
 
-const youtubeAPI = 'AIzaSyD-_QD0k5YQlT9VoO72vITUZKQT_qvOb4E'
+const youtubeAPI = ''
 
 class VideoContainer extends Component {
   state = {
     videos: [],
     currentVideo: null,
-  }
-
-  componentDidMount() {
-    this.callVideos('perritos');
   }
 
   callVideos = (term) => {
@@ -27,6 +23,10 @@ class VideoContainer extends Component {
         currentVideo: videos[0]
       });
     });
+  }
+
+  componentDidMount() {
+    this.callVideos('perritos');
   }
 
   render() {

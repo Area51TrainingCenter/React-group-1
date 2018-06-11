@@ -14,13 +14,13 @@ const VideoList = ({ videos, changeCurrentVideo }) => {
   })
 
   return (
-    <VideoListWrapper>
+    <Wrapper>
       {videoItems}
-    </VideoListWrapper>
+    </Wrapper>
   )
 }
 
-const VideoListWrapper = styled.ul`
+const Wrapper = styled.ul`
   flex: 1;
 `
 

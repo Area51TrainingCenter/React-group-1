@@ -15,6 +15,7 @@ class VideoSearch extends Component {
     return (
       <Wrapper>
         <input
+          className="form-input"
           value={this.state.term}
           onChange={e => this.handleChange(e.target.value)}
         />
@@ -28,7 +29,7 @@ const Wrapper = styled.div`
   margin-bottom: 40px;
   text-align: center;
 
-  input {
+  .form-input {
     border: 1px solid #8395a7;
     color: #8395a7;
     font-family: 'Open Sans Condensed', sans-serif;

@@ -10,7 +10,7 @@ const VideoDetail = ({ video }) => {
   const url = `https://www.youtube.com/embed/${videoId}`;
 
   return (
-    <VideoDetailWrapper>
+    <Wrapper>
       <Iframe>
         <iframe className="iframe" src={url} />
       </Iframe>
@@ -18,11 +18,11 @@ const VideoDetail = ({ video }) => {
         <div className="title">{video.snippet.title}</div>
         <div className="description">{video.snippet.description}</div>
       </Details>
-    </VideoDetailWrapper>
+    </Wrapper>
   );
 };
 
-const VideoDetailWrapper = styled.div`
+const Wrapper = styled.div`
   flex: 2;
   margin-right: 20px;
 `
