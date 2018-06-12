@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/bin/node',
+1 verbose cli   '/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'next',
+1 verbose cli   'react',
+1 verbose cli   'react-dom' ]
+2 info using npm@3.10.10
+3 info using node@v6.14.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData next
+8 silly fetchPackageMetaData react
+9 silly fetchPackageMetaData react-dom
+10 silly fetchNamedPackageData next
+11 silly mapToRegistry name next
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 'next',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   escapedName: 'next',
+14 silly mapToRegistry   name: 'next',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/next
+16 silly fetchNamedPackageData react
+17 silly mapToRegistry name react
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'react',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   escapedName: 'react',
+20 silly mapToRegistry   name: 'react',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/react
+22 silly fetchNamedPackageData react-dom
+23 silly mapToRegistry name react-dom
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'react-dom',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'react-dom',
+26 silly mapToRegistry   name: 'react-dom',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/react-dom
+28 verbose request uri https://registry.npmjs.org/next
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 6:33:19 PM
+31 verbose request id aace3175f719c813
+32 verbose etag W/"e0dfdb92b73e7d15822d9c04b5f50aeb"
+33 verbose lastModified Thu, 31 May 2018 12:34:24 GMT
+34 http request GET https://registry.npmjs.org/next
+35 verbose request uri https://registry.npmjs.org/react
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 6:33:19 PM
+38 verbose etag W/"b00b5e79afed05a8792f68aa2d386c3d"
+39 verbose lastModified Fri, 25 May 2018 03:16:31 GMT
+40 http request GET https://registry.npmjs.org/react
+41 verbose request uri https://registry.npmjs.org/react-dom
+42 verbose request no auth needed
+43 info attempt registry request try #1 at 6:33:19 PM
+44 verbose etag W/"cf3b1340409563c8c573238e0c052cc4"
+45 verbose lastModified Fri, 25 May 2018 01:44:47 GMT
+46 http request GET https://registry.npmjs.org/react-dom
+47 http 304 https://registry.npmjs.org/react
+48 verbose headers { date: 'Mon, 11 Jun 2018 23:33:20 GMT',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'set-cookie': [ '__cfduid=d8588e69b92f9fc865bdab0ead3ae68191528760000; expires=Tue, 11-Jun-19 23:33:20 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+48 verbose headers   'cache-control': 'max-age=300',
+48 verbose headers   'cf-cache-status': 'HIT',
+48 verbose headers   'cf-ray': '4297e1d2895a99c7-LAX',
+48 verbose headers   etag: '"b00b5e79afed05a8792f68aa2d386c3d"',
+48 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+48 verbose headers   'last-modified': 'Sun, 27 May 2018 15:23:09 GMT',
+48 verbose headers   vary: 'accept-encoding, accept',
+48 verbose headers   server: 'cloudflare' }
+49 silly get cb [ 304,
+49 silly get   { date: 'Mon, 11 Jun 2018 23:33:20 GMT',
+49 silly get     connection: 'keep-alive',
+49 silly get     'set-cookie': [ '__cfduid=d8588e69b92f9fc865bdab0ead3ae68191528760000; expires=Tue, 11-Jun-19 23:33:20 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+49 silly get     'cache-control': 'max-age=300',
+49 silly get     'cf-cache-status': 'HIT',
+49 silly get     'cf-ray': '4297e1d2895a99c7-LAX',
+49 silly get     etag: '"b00b5e79afed05a8792f68aa2d386c3d"',
+49 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+49 silly get     'last-modified': 'Sun, 27 May 2018 15:23:09 GMT',
+49 silly get     vary: 'accept-encoding, accept',
+49 silly get     server: 'cloudflare' } ]
+50 verbose etag https://registry.npmjs.org/react from cache
+51 verbose get saving react to /Users/paulrrdiaz/.npm/registry.npmjs.org/react/.cache.json
+52 verbose correctMkdir /Users/paulrrdiaz/.npm correctMkdir not in flight; initializing
+53 http 304 https://registry.npmjs.org/react-dom
+54 verbose headers { date: 'Mon, 11 Jun 2018 23:33:20 GMT',
+54 verbose headers   connection: 'keep-alive',
+54 verbose headers   'set-cookie': [ '__cfduid=da0c44accc1175e186a877acf4f2918e51528760000; expires=Tue, 11-Jun-19 23:33:20 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+54 verbose headers   'cache-control': 'max-age=300',
+54 verbose headers   'cf-cache-status': 'HIT',
+54 verbose headers   'cf-ray': '4297e1d28dd598f5-LAX',
+54 verbose headers   etag: '"cf3b1340409563c8c573238e0c052cc4"',
+54 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+54 verbose headers   'last-modified': 'Sun, 27 May 2018 13:56:07 GMT',
+54 verbose headers   vary: 'accept-encoding, accept',
+54 verbose headers   server: 'cloudflare' }
+55 silly get cb [ 304,
+55 silly get   { date: 'Mon, 11 Jun 2018 23:33:20 GMT',
+55 silly get     connection: 'keep-alive',
+55 silly get     'set-cookie': [ '__cfduid=da0c44accc1175e186a877acf4f2918e51528760000; expires=Tue, 11-Jun-19 23:33:20 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+55 silly get     'cache-control': 'max-age=300',
+55 silly get     'cf-cache-status': 'HIT',
+55 silly get     'cf-ray': '4297e1d28dd598f5-LAX',
+55 silly get     etag: '"cf3b1340409563c8c573238e0c052cc4"',
+55 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+55 silly get     'last-modified': 'Sun, 27 May 2018 13:56:07 GMT',
+55 silly get     vary: 'accept-encoding, accept',
+55 silly get     server: 'cloudflare' } ]
+56 verbose etag https://registry.npmjs.org/react-dom from cache
+57 verbose get saving react-dom to /Users/paulrrdiaz/.npm/registry.npmjs.org/react-dom/.cache.json
+58 verbose correctMkdir /Users/paulrrdiaz/.npm correctMkdir already in flight; waiting
+59 http 304 https://registry.npmjs.org/next
+60 verbose headers { date: 'Mon, 11 Jun 2018 23:33:20 GMT',
+60 verbose headers   connection: 'keep-alive',
+60 verbose headers   'set-cookie': [ '__cfduid=d08aa61af91c832d43f7d79892df4c48c1528760000; expires=Tue, 11-Jun-19 23:33:20 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+60 verbose headers   'cache-control': 'max-age=300',
+60 verbose headers   'cf-cache-status': 'HIT',
+60 verbose headers   'cf-ray': '4297e1d28d5c994f-LAX',
+60 verbose headers   etag: '"e0dfdb92b73e7d15822d9c04b5f50aeb"',
+60 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+60 verbose headers   'last-modified': 'Thu, 31 May 2018 12:34:24 GMT',
+60 verbose headers   vary: 'accept-encoding, accept',
+60 verbose headers   server: 'cloudflare' }
+61 silly get cb [ 304,
+61 silly get   { date: 'Mon, 11 Jun 2018 23:33:20 GMT',
+61 silly get     connection: 'keep-alive',
+61 silly get     'set-cookie': [ '__cfduid=d08aa61af91c832d43f7d79892df4c48c1528760000; expires=Tue, 11-Jun-19 23:33:20 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+61 silly get     'cache-control': 'max-age=300',
+61 silly get     'cf-cache-status': 'HIT',
+61 silly get     'cf-ray': '4297e1d28d5c994f-LAX',
+61 silly get     etag: '"e0dfdb92b73e7d15822d9c04b5f50aeb"',
+61 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+61 silly get     'last-modified': 'Thu, 31 May 2018 12:34:24 GMT',
+61 silly get     vary: 'accept-encoding, accept',
+61 silly get     server: 'cloudflare' } ]
+62 verbose etag https://registry.npmjs.org/next from cache
+63 verbose get saving next to /Users/paulrrdiaz/.npm/registry.npmjs.org/next/.cache.json
+64 verbose correctMkdir /Users/paulrrdiaz/.npm correctMkdir already in flight; waiting
+65 silly install normalizeTree
+66 silly loadCurrentTree Finishing
+67 silly loadIdealTree Starting
+68 silly install loadIdealTree
+69 silly cloneCurrentTree Starting
+70 silly install cloneCurrentTreeToIdealTree
+71 silly cloneCurrentTree Finishing
+72 silly loadShrinkwrap Starting
+73 silly install loadShrinkwrap
+74 silly loadShrinkwrap Finishing
+75 silly loadAllDepsIntoIdealTree Starting
+76 silly install loadAllDepsIntoIdealTree
+77 silly rollbackFailedOptional Starting
+78 silly rollbackFailedOptional Finishing
+79 silly runTopLevelLifecycles Finishing
+80 silly install printInstalled
+81 verbose stack Error: Refusing to install next as a dependency of itself
+81 verbose stack     at checkSelf (/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+81 verbose stack     at Array.<anonymous> (/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+81 verbose stack     at LOOP (/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+81 verbose stack     at chain (/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+81 verbose stack     at /Users/paulrrdiaz/.nvm/versions/node/v6.14.2/lib/node_modules/npm/lib/install/validate-args.js:16:5
+81 verbose stack     at /Users/paulrrdiaz/.nvm/versions/node/v6.14.2/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+81 verbose stack     at Array.forEach (native)
+81 verbose stack     at /Users/paulrrdiaz/.nvm/versions/node/v6.14.2/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+81 verbose stack     at Array.forEach (native)
+81 verbose stack     at asyncMap (/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+82 verbose cwd /Users/paulrrdiaz/Workspace/area51/react-course/clase10/next
+83 error Darwin 17.5.0
+84 error argv "/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/bin/node" "/Users/paulrrdiaz/.nvm/versions/node/v6.14.2/bin/npm" "install" "--save" "next" "react" "react-dom"
+85 error node v6.14.2
+86 error npm  v3.10.10
+87 error code ENOSELF
+88 error Refusing to install next as a dependency of itself
+89 error If you need help, you may report this error at:
+89 error     <https://github.com/npm/npm/issues>
+90 verbose exit [ 1, true ]
